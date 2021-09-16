@@ -27,10 +27,10 @@ def calculate_input():
         player_guess = int(input("Your guess: "))
         if player_guess == "exit": quit()
         amount_of_guesses += 1
-        if player_guess == generated_number: print("That is correct!"); break
+        if player_guess == generated_number: print("That is correct!!!"); break
         elif player_guess < generated_number: print("Your guess is to low!")
         else: print("Your guess is too high!")
-    print("Amount of tries: "+str(amount_of_guesses))
+    print("Amount of tries: "+str(amount_of_guesses)+"\n")
     return
  
 def quit_or_play():
