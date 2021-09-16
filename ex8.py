@@ -9,11 +9,12 @@ def initial_setup():
       print("Welcome to the Rock, Paper, Scissors Game!")
       print("Two people are required to play, obviously.")
       print("Press Enter to start the game...")
-      press_enter= ord(getch())
-      if press_enter == 13:
-            return
-      elif press_enter == 27:
-            quit()
+      while(True):
+            key_pressed= ord(getch())
+            if key_pressed == 13: #enter
+                  return
+            elif key_pressed == 27: #escape
+                  quit()
   
 """
 def check_input(key_pressed,key_desired, max_tries):
@@ -66,10 +67,12 @@ def main():
             initial_setup()
             p1_choice, p2_choice = collect_input()
             calculate_input(p1_choice,p2_choice)
-            print("Press Enter to play again...")
-            play_again = ord(getch())
-            if play_again == 27:
-                  break
-      quit()
+            print("Press Enter to play again, or Escape to quit...")
+            while(True):
+                  play_again = ord(getch())
+                  if play_again == 27:
+                        quit()
+                  elif play_again == 13:
+                        break
 
 main()
