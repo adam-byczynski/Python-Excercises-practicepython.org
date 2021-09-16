@@ -1,1 +1,1 @@
-Lista ćwiczeń z pythona ze strony practicepython.org
+List of mine solutions to excercises from practicepython.org
