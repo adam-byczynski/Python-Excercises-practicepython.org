@@ -29,16 +29,17 @@ def collect_input():
 
       viable_inputs = ["rock", "paper","scissors"]
       tries=0
+      os.system('cls')
       while(True):
-            os.system('cls')
             p1_input = input("Player 1: Enter 'rock', 'paper, or 'scissors': ")
             if p1_input in viable_inputs:
                   os.system('cls')
                   break
             else:
                   print("Your input is incorrect!!!")
+                  if tries == 2: quit()
                   tries+=1
-                  if tries == 4: quit()
+                  
       tries=0
       while(True):
             p2_input = input("Player 2: Enter 'rock', 'paper, or 'scissors': ")
@@ -47,8 +48,9 @@ def collect_input():
                   break
             else:
                   print("Your input is incorrect!!!")
+                  if tries == 2: quit()
                   tries+=1
-                  if tries == 4: quit()
+                  
       return p1_input, p2_input
 
 def calculate_input(p1,p2):
