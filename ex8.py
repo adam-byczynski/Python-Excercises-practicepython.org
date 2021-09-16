@@ -1,3 +1,5 @@
+#Basic version of the game of rock, paper and scissors
+
 import os
 from msvcrt import getch
 
