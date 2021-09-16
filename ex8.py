@@ -49,7 +49,6 @@ def collect_input():
                   print("Your input is incorrect!!!")
                   tries+=1
                   if tries == 4: quit()
-      
       return p1_input, p2_input
 
 def calculate_input(p1,p2):
