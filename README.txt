@@ -1,1 +1,1 @@
-List of mine solutions to excercises from practicepython.org
+Solutions to excercises from practicepython.org
