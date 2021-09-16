@@ -1,0 +1,1 @@
+Lista ćwiczeń z pythona ze strony practicepython.org
