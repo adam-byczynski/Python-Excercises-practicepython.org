@@ -26,7 +26,6 @@ def check_input(key_pressed,key_desired, max_tries):
 """
 
 def collect_input():
-
       viable_inputs = ["rock", "paper","scissors"]
       tries=0
       os.system('cls')
@@ -53,7 +52,6 @@ def collect_input():
       return p1_input, p2_input
 
 def calculate_input(p1,p2):
-      
       if p1==p2:
             print("It's a tie!")
       elif p1=="rock" and p2=="scissors" or p1=="paper" and p2=="rock" or p1=="scissors" and p2=="paper":
