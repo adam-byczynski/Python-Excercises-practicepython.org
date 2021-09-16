@@ -61,18 +61,21 @@ def calculate_input(p1,p2):
             print("Player 1 won the game!")
       elif p2=="rock" and p1=="scissors" or p2=="paper" and p1=="rock" or p2=="scissors" and p1=="paper":
             print("Player 2 won the game!")
+ 
+def quit_or_play():
+        print("Press Enter to play again, or Escape to quit...")
+        while(True):
+            play_again = ord(getch())
+            if play_again == 27:
+                quit()
+            elif play_again == 13:
+                break  
             
 def main():
       while(True): 
             initial_setup()
             p1_choice, p2_choice = collect_input()
             calculate_input(p1_choice,p2_choice)
-            print("Press Enter to play again, or Escape to quit...")
-            while(True):
-                  play_again = ord(getch())
-                  if play_again == 27:
-                        quit()
-                  elif play_again == 13:
-                        break
+            quit_or_play()
 
 main()
