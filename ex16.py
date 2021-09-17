@@ -19,7 +19,8 @@ def generate_pass(l, d):  #length, difficult
     print("Press Enter to generate another password, S to save it to the text document, or Escape to quit:")
     while(True):
         #usr_path = os.path.expanduser()
-        g_pass = "".join(random.sample(choose_d.get(d), k=int(l)))
+        temp_1= choose_d.get(d)
+        g_pass = "".join(random.sample(temp_1, k=int(l)))
         print("Is this password ok?", g_pass)
         dec = ord(getch())
         if dec == 27:
