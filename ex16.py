@@ -5,6 +5,7 @@ import time
 from msvcrt import getch
 import random
 import os
+import getpass
 
 def initial_setup():
     os.system('cls')
@@ -28,12 +29,14 @@ def generate_pass(l, d):  #length, difficult
         elif dec == 13:
             continue
         elif dec == 115:
-            path = open(r'C:\Users\asdasd\Desktop\generated_password.txt','w')  #czy da sie zrobic token username
-            path.write("Generated password: "+g_pass)
+            username = getpass.getuser()
+            path = open(f'C:\\Users\\{username}\\Desktop\\generated_password.txt','w')
+            path.write("Generated password: " + g_pass)
             path.close()
             print("Password saved to Desktop!")
             time.sleep(3)
             break
+    
     
 def main():
     while True:

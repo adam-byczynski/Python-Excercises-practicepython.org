@@ -33,8 +33,8 @@ def check_input(key_pressed,key_desired, max_tries):
 
 def collect_input():
       viable_inputs = ["rock", "paper", "scissors"]
-      tries = 0
       os.system('cls')
+      tries = 0
       while(True):
             p1_input = input("Player 1: Enter 'rock', 'paper, or 'scissors': ")
             if p1_input.lower() in viable_inputs:
